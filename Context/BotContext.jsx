@@ -10,7 +10,7 @@ export const BotProvider = ({ children }) => {
     const [botPosX, setBotPosX] = useState(96); // in %
     const [botPosY, setBotPosY] = useState(-10); // in %
     const [botContainerSize, setBotContainerSize] = useState(150); // in px
-    const [botText, setBotText] = useState("hello freinds press anywhere on screen to continue"); // in px
+    const [botText, setBotText] = useState("hello freinds click anywhere on screen to continue"); // in px
     const [botDilague, setBotDilague] = useState(true); // in px
 
 

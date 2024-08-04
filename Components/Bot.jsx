@@ -6,6 +6,7 @@ import { useBot } from '../Context/BotContext';
 import { roboTextSplit, splitText } from '../Utils/TextUtils';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import './Styles.css';
 
 function BotModel() {
     const { animateBot } = useBot();
@@ -65,7 +66,7 @@ export default function Bot() {
         >
             <div style={{
                 position: "absolute",
-                backgroundColor: "red",
+                backgroundColor: "#333",
                 padding: "10px",
                 bottom: "100%",
                 right: "100%",
@@ -75,10 +76,15 @@ export default function Bot() {
                 minWidth: "200px",
                 height: "auto",
                 display: botDilague ? "block" : "none",
+                fontFamily: 'humanoid',
+                fontSize: 'small',
+                color: 'skyblue'
+
             }} ref={textRef}>
                 {roboTextSplit(botText)}
             </div>
-            <Canvas>
+            
+            <Canvas className='cursor-pointer'>
                 <Suspense fallback={null}>
                     <PerspectiveCamera makeDefault position={[0, 4, 32]} />
                     <OrbitControls enableZoom={false} />

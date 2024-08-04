@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'humanoid';
+    src: url('../Fonts/humanoid.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Kingthings';
+    src: url('../Fonts/Kingthings.ttf');
+}
