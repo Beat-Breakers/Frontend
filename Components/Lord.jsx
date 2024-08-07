@@ -21,8 +21,8 @@ export default function Lord() {
                     <OrbitControls />
 
                     <primitive object={lord.scene} position={[0, -0.2, 0]} scale={[1.3, 1.3, 1.3]}/>
-                    <ambientLight args={["#ffffff", 1]} />
-                    <spotLight args={["#00ffff", 50]} position={[1, 3, 4]} penumbra={0.5} castShadow />
+                    <ambientLight args={["#ffffff", 5]} />
+                    {/* <spotLight args={["#00ffff", 50]} position={[1, 3, 4]} penumbra={0.5} castShadow /> */}
                     {/* <axesHelper setColors={["red", "green", "blue"]}/> */}
                 </Suspense>
             </Canvas>

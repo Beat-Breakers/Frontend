@@ -7,6 +7,7 @@ import { BotProvider } from '../Context/BotContext.jsx';
 import Bot from '../Components/Bot.jsx';
 import Home from '../Pages/Home.jsx';
 
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BotProvider>

@@ -7,3 +7,34 @@ body{
   width: 100vw;
   /* background-color: gray; */
 }
+.nev_item{
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  font-size: x-large;
+  font-weight: bold;
+  width: 100%;
+  transition-duration: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nev_item::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+  background-color: black;
+  left: 50%;
+  transition-duration: 0.5s;
+}
+
+.nev_item:hover::after{
+  width: 100%;
+  left: 0%;
+}
+.nev_item:hover{
+  color: white;
+}
